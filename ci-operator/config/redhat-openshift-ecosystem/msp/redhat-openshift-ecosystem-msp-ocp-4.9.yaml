@@ -13,7 +13,8 @@ resources:
       cpu: 100m
       memory: 200Mi
 tests:
-- as: msp-ocp-4-9-medium-single-az-amd64-aws-us-east-1
+#- as: msp-ocp-4-9-medium-single-az-amd64-aws-us-east-1
+- as: msp-ocp-4-9-medium-us-east-1
   cluster_claim:
     architecture: amd64
     cloud: aws
@@ -33,7 +34,8 @@ tests:
       OO_TARGET_NAMESPACES: '!install'
       PYXIS_URL: ""
     workflow: optional-operators-cvp-common-claim
-- as: msp-ocp-4-9-small-single-az-amd64-aws-us-east-2
+#- as: msp-ocp-4-9-small-single-az-amd64-aws-us-east-2
+- as: msp-ocp-4-9-small-us-east-2
   cluster_claim:
     architecture: amd64
     cloud: aws
