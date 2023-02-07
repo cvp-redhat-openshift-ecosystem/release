@@ -24,7 +24,7 @@ spec:
   installAttemptsLimit: 1
   installConfigSecretTemplateRef:
     name: install-config-small-aws-us-east-2
-  maxSize: 0
+  maxSize: 5
   platform:
     aws:
       credentialsSecretRef:
@@ -32,7 +32,7 @@ spec:
       region: us-east-2
   pullSecretRef:
     name: pull-secret
-  size: 0
+  size: 4
   skipMachinePools: true
 status:
   ready: 0
